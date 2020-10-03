@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #040615;
+
+}
+.clock {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid yellow;
+    border-radius: 50%;
+}
+.clock::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #2196f3;
+    z-index: 10000;
+    border-radius: 50%;
+}
+.hour,
+.min,
+.sec {
+    position: absolute;
+    
+}
+.hour, .hr{
+    width: 200px;
+    height: 200px;
+
+}
+.min, .mn {
+    width: 230px;
+    height: 230px;
+}
+.sec, .sc {
+    width: 250px;
+    height: 250px;
+}
+.hr, .mn, .sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.hr::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 100px;
+    background:yellowgreen;
+
+}
+.mn::before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 110px;
+    background:tomato;
+    
+}
+.sc::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 120px;
+    background:#2196f3;
+    
+}
+#digtalclock {
+    display: flex;
+    color: #ffffff;
+    font-size: 4em;
+    margin-top: 20px;
+}
+#hour{
+    color: yellowgreen;
+}
+#minutes {
+    color: tomato;
+}
+#seconds{
+    color:#2196f3;
+}
+#ampm{
+    color: yellow;
+}
+
+
